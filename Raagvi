@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raagvi - A Touch of Exclusive</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🌸 Raagvi</h1>
+    <p class="tagline">A Touch of Exclusive</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Intro -->
+  <section id="hero">
+    <h2>Elegance, Strength & Timeless Fashion</h2>
+    <p>
+      At <strong>Raagvi</strong>, we celebrate the elegance and strength of women 
+      through timeless and exclusive fashion.
+    </p>
+    <button onclick="alert('Welcome to Raagvi ✨')">Explore Raagvi</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Raagvi, we celebrate the elegance and strength of women through timeless and exclusive fashion. 
+      Specializing in handpicked sarees, stylish suits and exquisite jewellery that blend tradition with 
+      modern trends. We provide affordable yet uncompromised quality, ensuring every woman feels truly special 
+      in one of our attire.
+    </p>
+  </section>
+
+  <!-- Collections / Projects -->
+  <section id="collections">
+    <h2>Our Collections</h2>
+    <ul>
+      <li>✨ Hand-picked High Quality Sarees</li>
+      <li>✨ Stylish Suits</li>
+      <li>✨ Exclusive Jewellery</li>
+      <li>✨ Hand-made & Hand-picked Candles</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      📧 Email: <a href="mailto:raagvi@example.com">raagvi@example.com</a><br>
+      📷 Instagram: <a href="https://instagram.com/raagvi" target="_blank">@raagvi</a><br>
+      🛍️ Visit us soon for more updates!
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <small>&copy; <span id="year"></span> Raagvi - A Touch of Exclusive</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
