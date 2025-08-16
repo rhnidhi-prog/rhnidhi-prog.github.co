@@ -1,70 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raagvi - A Touch of Exclusive</title>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>🌸 Raagvi</h1>
-    <p class="tagline">A Touch of Exclusive</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#collections">Collections</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+/* === Raagvi Brand Styling === */
 
-  <!-- Hero / Intro -->
-  <section id="hero">
-    <h2>Elegance, Strength & Timeless Fashion</h2>
-    <p>
-      At <strong>Raagvi</strong>, we celebrate the elegance and strength of women 
-      through timeless and exclusive fashion.
-    </p>
-    <button onclick="alert('Welcome to Raagvi ✨')">Explore Raagvi</button>
-  </section>
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;400;600&display=swap');
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      At Raagvi, we celebrate the elegance and strength of women through timeless and exclusive fashion. 
-      Specializing in handpicked sarees, stylish suits and exquisite jewellery that blend tradition with 
-      modern trends. We provide affordable yet uncompromised quality, ensuring every woman feels truly special 
-      in one of our attire.
-    </p>
-  </section>
+:root {
+  --brand-color: #b08f76;   /* Elegant soft gold */
+  --accent-color: #d4b5a7;  /* Warm beige-pink */
+  --text-color: #333;
+  --bg-color: #fdfdfd;
+  --maxw: 900px;
+  --radius: 14px;
+  --pad: 16px;
+}
 
-  <!-- Collections / Projects -->
-  <section id="collections">
-    <h2>Our Collections</h2>
-    <ul>
-      <li>✨ Hand-picked High Quality Sarees</li>
-      <li>✨ Stylish Suits</li>
-      <li>✨ Exclusive Jewellery</li>
-      <li>✨ Hand-made & Hand-picked Candles</li>
-    </ul>
-  </section>
+/* Global Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>
-      📧 Email: <a href="mailto:raagvi@example.com">raagvi@example.com</a><br>
-      📷 Instagram: <a href="https://instagram.com/raagvi" target="_blank">@raagvi</a><br>
-      🛍️ Visit us soon for more updates!
-    </p>
-  </section>
+body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 1rem;
+}
 
-  <!-- Footer -->
-  <footer>
-    <small>&copy; <span id="year"></span> Raagvi - A Touch of Exclusive</small>
-  </footer>
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--brand-color);
+}
+header .tagline {
+  font-size: 1rem;
+  color: var(--accent-color);
+  margin-top: 0.3rem;
+}
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--brand-color);
+  margin: 0 12px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: var(--accent-color);
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+/* Hero Section */
+#hero {
+  max-width: var(--maxw);
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+#hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--brand-color);
+  margin-bottom: 1rem;
+}
+#hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+#hero button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 50px;
+  background: var(--brand-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#hero button:hover {
+  background: var(--accent-color);
+}
+
+/* Section Styling */
+section {
+  max-width: var(--maxw);
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--brand-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+section p {
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Collections / Projects */
+#collections ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+#collections li {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 1.05rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+#collections li:hover {
+  transform: translateY(-4px);
+}
+
+/* Contact Section */
+#contact p {
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+#contact a {
+  color: var(--brand-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+#contact a:hover {
+  color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8rem; }
+  #hero h2 { font-size: 1.6rem; }
+  section { padding: 1rem; }
+  nav a { margin: 0 8px; }
+}
